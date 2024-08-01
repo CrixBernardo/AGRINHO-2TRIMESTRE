@@ -12,6 +12,13 @@ body {
     background-color: #f0f0f0;
 }
 
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 header {
     background-color: #333;
     color: #fff;
@@ -45,8 +52,23 @@ main {
     padding: 20px;
 }
 
-section {
-    margin-bottom: 20px;
+.section {
+    margin-bottom: 40px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery a {
+    margin: 10px;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
 }
 
 footer {

@@ -5,39 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site de Vôlei</title>
     <link rel="stylesheet" href="styles.css"> <!-- Arquivo de estilos -->
+    <link rel="stylesheet" href="lightbox.min.css"> <!-- Estilos para galeria de imagens -->
 </head>
 <body>
     <header>
-        <h1>Site de Vôlei</h1>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Site de Vôlei</h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section id="inicio">
-            <h2>Bem-vindo ao Site de Vôlei</h2>
-            <p>Texto de boas-vindas e introdução ao site.</p>
-            <img src="volleyball.jpg" alt="Imagem de Vôlei">
+        <section id="inicio" class="section">
+            <div class="container">
+                <h2>Bem-vindo ao Mundo do Vôlei</h2>
+                <p>Texto introdutório sobre o vôlei e o propósito do site.</p>
+                <a href="#sobre" class="btn">Saiba Mais</a>
+            </div>
         </section>
 
-        <section id="sobre">
-            <h2>Sobre o Vôlei</h2>
-            <p>Informações sobre a história e as regras do vôlei.</p>
+        <section id="sobre" class="section">
+            <div class="container">
+                <h2>Sobre o Vôlei</h2>
+                <p>Informações sobre a história, regras e benefícios do vôlei.</p>
+            </div>
         </section>
 
-        <section id="contato">
-            <h2>Contato</h2>
-            <p>Formulário de contato ou informações de contato.</p>
+        <section id="galeria" class="section">
+            <div class="container">
+                <h2>Galeria de Imagens</h2>
+                <div class="gallery">
+                    <a href="images/volleyball1.jpg" data-lightbox="gallery"><img src="images/volleyball1-thumb.jpg" alt="Imagem de Vôlei 1"></a>
+                    <a href="images/volleyball2.jpg" data-lightbox="gallery"><img src="images/volleyball2-thumb.jpg" alt="Imagem de Vôlei 2"></a>
+                    <a href="images/volleyball3.jpg" data-lightbox="gallery"><img src="images/volleyball3-thumb.jpg" alt="Imagem de Vôlei 3"></a>
+                    <a href="images/volleyball4.jpg" data-lightbox="gallery"><img src="images/volleyball4-thumb.jpg" alt="Imagem de Vôlei 4"></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="section">
+            <div class="container">
+                <h2>Contato</h2>
+                <form action="#" method="POST" class="contact-form">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                    <button type="submit" class="btn">Enviar</button>
+                </form>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Site de Vôlei. Todos os direitos reservados.</p>
+        <div class="container">
+            <p>&copy; 2024 Site de Vôlei. Todos os direitos reservados.</p>
+        </div>
     </footer>
+
+    <script src="lightbox.min.js"></script> <!-- Script para galeria de imagens -->
 </body>
 </html>
