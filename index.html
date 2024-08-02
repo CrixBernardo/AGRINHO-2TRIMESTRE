@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>Clínica Veterinária</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -20,38 +20,42 @@
     </header>
 
     <section id="home">
-        <h2>Bem-vindo à nossa clínica!</h2>
-        <p>Cuidamos do seu melhor amigo com amor e dedicação.</p>
-        <img src="https://via.placeholder.com/600x300?text=Seu+Pet+Feliz" alt="Cachorro feliz" />
+        <h2>Bem-vindo à Clínica Veterinária</h2>
+        <p>Cuidados especiais para o seu pet.</p>
     </section>
 
     <section id="sobre">
         <h2>Sobre Nós</h2>
-        <p>Somos uma equipe de veterinários apaixonados pela saúde e bem-estar dos animais. Nossa missão é proporcionar cuidados de qualidade para os seus pets.</p>
-        <img src="https://via.placeholder.com/600x300?text=Sobre+Nós" alt="Veterinários" />
+        <p>Nós somos uma equipe dedicada de profissionais veterinários comprometidos com a saúde e o bem-estar do seu animal de estimação.</p>
     </section>
 
     <section id="servicos">
-        <h2>Serviços</h2>
+        <h2>Nossos Serviços</h2>
         <ul>
-            <li>Consultas Veterinárias</li>
+            <li>Consultas de rotina</li>
             <li>Vacinação</li>
             <li>Cirurgias</li>
-            <li>Exames Laboratoriais</li>
-            <li>Banho e Tosa</li>
+            <li>Emergências</li>
         </ul>
-        <img src="https://via.placeholder.com/600x300?text=Serviços" alt="Serviços Veterinários" />
     </section>
 
     <section id="contato">
         <h2>Contato</h2>
-        <p>Email: contato@clinica.com</p>
-        <p>Telefone: (11) 1234-5678</p>
-        <p>Endereço: Rua dos Animais, 123 - São Paulo, SP</p>
+        <form id="contato-form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
     </section>
 
     <footer>
         <p>&copy; 2024 Clínica Veterinária. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
